@@ -20,7 +20,9 @@ public class Main {
     public Main() {
         //Firefox driver
         System.setProperty("webdriver.gecko.driver", "D:\\java\\webdriver\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
+        WebDriver object = new FirefoxDriver();
+        driver = object;
+        driver.manage().window().maximize();
 
         //Chrome driver
         //System.setProperty("webdriver.chrome.driver", "D:\\java\\webdriver\\chromedriver.exe");
@@ -44,7 +46,6 @@ public class Main {
     @Test
     public void addRemoveButton() throws InterruptedException {
         driver.get("http://the-internet.herokuapp.com/add_remove_elements/");
-        driver.manage().window().maximize();
 
         WebElement addButton = driver.findElement(By.cssSelector("div.example button[onClick*='addElement']"));
         addButton.click();
@@ -61,9 +62,6 @@ public class Main {
 
     @Test
     public void checkbox() throws InterruptedException {
-        System.setProperty("webdriver.gecko.driver", "D:\\java\\webdriver\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
-        driver.manage().window().maximize();
         driver.get("http://the-internet.herokuapp.com/checkboxes");
 
         WebElement form = driver.findElement((By.id("checkboxes")));
@@ -91,9 +89,6 @@ public class Main {
 
     @Test
     public void dropDown() throws InterruptedException {
-        System.setProperty("webdriver.gecko.driver", "D:\\java\\webdriver\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
-        driver.manage().window().maximize();
         driver.get("http://the-internet.herokuapp.com/dropdown");
 
 
@@ -119,9 +114,6 @@ public class Main {
 
     @Test
     public void entryAd() throws InterruptedException {
-        System.setProperty("webdriver.gecko.driver", "D:\\java\\webdriver\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
-        driver.manage().window().maximize();
         driver.get("http://the-internet.herokuapp.com/entry_ad");
 
         // This Thread sleep is important to wait button
@@ -154,13 +146,10 @@ public class Main {
 
     @Test
     public void floatingMenu() throws InterruptedException {
-        System.setProperty("webdriver.gecko.driver", "D:\\java\\webdriver\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
-        driver.manage().window().maximize();
         driver.get("http://the-internet.herokuapp.com/floating_menu");
 
         // Define size of scroll abd default offset top of element
-        int scrollHeight = 150;
+        int scrollHeight = 850;
         int defaultOffset = 37;
 
         Thread.sleep(1000);
@@ -184,9 +173,6 @@ public class Main {
 
     @Test
     public void inputs() throws InterruptedException {
-        System.setProperty("webdriver.gecko.driver", "D:\\java\\webdriver\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
-        driver.manage().window().maximize();
         driver.get("http://the-internet.herokuapp.com/inputs");
 
         WebElement inputNumber = driver.findElement(By.className("example")).findElement(By.tagName("input"));
