@@ -54,23 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.addRemoveButton">
-    <configuration name="Main.addRemoveButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Maven_Test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mavenTesting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mavenTesting" />
-      <option name="MAIN_CLASS_NAME" value="mavenTesting.Main" />
-      <option name="METHOD_NAME" value="addRemoveButton" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Main.inputs">
     <configuration name="Main.checkbox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Maven_Test" />
       <extension name="coverage">
@@ -82,6 +66,22 @@
       <option name="PACKAGE_NAME" value="mavenTesting" />
       <option name="MAIN_CLASS_NAME" value="mavenTesting.Main" />
       <option name="METHOD_NAME" value="checkbox" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main.dropDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Maven_Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mavenTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mavenTesting" />
+      <option name="MAIN_CLASS_NAME" value="mavenTesting.Main" />
+      <option name="METHOD_NAME" value="dropDown" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Main.addRemoveButton" />
-        <item itemvalue="JUnit.Main.checkbox" />
         <item itemvalue="JUnit.Main.inputs" />
         <item itemvalue="JUnit.Main.floatingMenu" />
         <item itemvalue="JUnit.Main.entryAd" />
+        <item itemvalue="JUnit.Main.dropDown" />
+        <item itemvalue="JUnit.Main.checkbox" />
       </list>
     </recent_temporary>
   </component>
