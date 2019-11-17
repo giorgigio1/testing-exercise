@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba44b596-d3c3-4d1c-8151-5ccc773dda0f" name="Default Changelist" comment="" />
+    <list default="true" id="ba44b596-d3c3-4d1c-8151-5ccc773dda0f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mavenTesting/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mavenTesting/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mavenTesting/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mavenTesting/Main.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +24,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -28,6 +35,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1TdvSSyxrmp2o1N91oFxlucL56a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -46,8 +54,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.dropdown">
-    <configuration name="Main.checkboxes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Main.addRemoveButton">
+    <configuration name="Main.addRemoveButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Maven_Test" />
       <extension name="coverage">
         <pattern>
@@ -57,13 +65,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="mavenTesting" />
       <option name="MAIN_CLASS_NAME" value="mavenTesting.Main" />
-      <option name="METHOD_NAME" value="checkboxes" />
+      <option name="METHOD_NAME" value="addRemoveButton" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.dropdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.checkbox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Maven_Test" />
       <extension name="coverage">
         <pattern>
@@ -73,7 +81,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="mavenTesting" />
       <option name="MAIN_CLASS_NAME" value="mavenTesting.Main" />
-      <option name="METHOD_NAME" value="dropdown" />
+      <option name="METHOD_NAME" value="checkbox" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.inpus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.inputs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Maven_Test" />
       <extension name="coverage">
         <pattern>
@@ -121,7 +129,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="mavenTesting" />
       <option name="MAIN_CLASS_NAME" value="mavenTesting.Main" />
-      <option name="METHOD_NAME" value="inpus" />
+      <option name="METHOD_NAME" value="inputs" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Main.dropdown" />
-        <item itemvalue="JUnit.Main.checkboxes" />
+        <item itemvalue="JUnit.Main.addRemoveButton" />
+        <item itemvalue="JUnit.Main.checkbox" />
+        <item itemvalue="JUnit.Main.inputs" />
         <item itemvalue="JUnit.Main.floatingMenu" />
         <item itemvalue="JUnit.Main.entryAd" />
-        <item itemvalue="JUnit.Main.inpus" />
       </list>
     </recent_temporary>
   </component>
@@ -149,5 +157,18 @@
       <updated>1573802786685</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

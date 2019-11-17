@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -14,12 +15,36 @@ import java.util.List;
 
 public class Main {
 
-    @Test
-    public void addRemove() throws InterruptedException {
+    WebDriver driver;
+
+    public Main() {
+        //Firefox driver
         System.setProperty("webdriver.gecko.driver", "D:\\java\\webdriver\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
-        driver.manage().window().maximize();
+
+        //Chrome driver
+        //System.setProperty("webdriver.chrome.driver", "D:\\java\\webdriver\\chromedriver.exe");
+        //WebDriver driver = new ChromeDriver();
+    }
+
+    public static void main (String[] args) throws InterruptedException {
+
+        Main test = new Main();
+        // Run tests
+        test.addRemoveButton();
+        test.checkbox();
+        test.dropDown();
+        test.entryAd();
+        test.floatingMenu();
+        test.inputs();
+
+        test.afterTest();
+    }
+
+    @Test
+    public void addRemoveButton() throws InterruptedException {
         driver.get("http://the-internet.herokuapp.com/add_remove_elements/");
+        driver.manage().window().maximize();
 
         WebElement addButton = driver.findElement(By.cssSelector("div.example button[onClick*='addElement']"));
         addButton.click();
@@ -35,7 +60,7 @@ public class Main {
     }
 
     @Test
-    public void checkboxes() throws InterruptedException {
+    public void checkbox() throws InterruptedException {
         System.setProperty("webdriver.gecko.driver", "D:\\java\\webdriver\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
@@ -65,7 +90,7 @@ public class Main {
     }
 
     @Test
-    public void dropdown() throws InterruptedException {
+    public void dropDown() throws InterruptedException {
         System.setProperty("webdriver.gecko.driver", "D:\\java\\webdriver\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
@@ -158,7 +183,7 @@ public class Main {
     }
 
     @Test
-    public void inpus() throws InterruptedException {
+    public void inputs() throws InterruptedException {
         System.setProperty("webdriver.gecko.driver", "D:\\java\\webdriver\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
@@ -173,6 +198,10 @@ public class Main {
         if (!inputNumber.getAttribute("value").equals("10")) {
             System.out.println("Error! Value should be 10");
         }
+    }
+
+    public void afterTest() {
+        driver.close();
     }
 }
 
